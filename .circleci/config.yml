@@ -57,7 +57,7 @@ jobs:
           command: |
             cd /home/circleci && git clone git@github.com:AndreySK4/libsampso.git ~/libsampso
             cd ~/libsampso && git submodule update --init
-            cd ${ANDROID_NDK} && ./android-ndk-r15b/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-objdump -T "libsamp.so | less
+            cd ${ANDROID_NDK} && ./android-ndk-r16/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-objdump -T libsamp.so | less
       - run:
           name: LS
           command: cd /home/circleci/libsampso && ls
