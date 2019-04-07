@@ -66,6 +66,5 @@ jobs:
           command: |
             mkdir /tmp/artifacts
             mv /home/circleci/libsampso/* /tmp/artifacts
-            
-       - store_artifacts:
+      - store_artifacts:
           path: /tmp/artifacts
